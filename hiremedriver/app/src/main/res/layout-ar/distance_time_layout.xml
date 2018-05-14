@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".SlideMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <com.custom.BTextView
+            app:btextfont="@string/RobotoCondensed"
+            android:id="@+id/tv_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="16 min"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#24AB9A"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold" />
+
+        <com.custom.BTextView
+            app:btextfont="@string/RobotoCondensed"
+            android:id="@+id/tv_distance_value"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="5.50 Km"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1">
+
+            <com.custom.BTextView
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/tv_cu_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="bold" />
+
+            <com.custom.BTextView
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/tv_eta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="ETA"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.custom.BTextView
+        app:btextfont="@string/RobotoCondensed"
+        android:id="@+id/tv_time_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size" />
+
+    <com.custom.BTextView
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/dot"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+
+    <com.custom.BTextView
+        app:btextfont="@string/RobotoCondensed"
+        android:id="@+id/tv_distance_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size" />
+
+    <com.custom.BTextView
+        app:btextfont="@string/RobotoCondensed"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:text="@string/dot"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#898888"
+        android:textStyle="bold" />
+
+
+
+    <com.custom.BTextView
+        app:btextfont="@string/RobotoCondensed"
+        android:id="@+id/tv_am_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/am"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>

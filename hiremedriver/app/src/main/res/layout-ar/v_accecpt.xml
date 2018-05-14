@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".SlideMainActivity">
+
+    <com.custom.BTextView
+        android:id="@+id/v_pickuploaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/Pickup_Location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue_color"
+        android:visibility="visible"
+        android:textSize="16sp"
+        app:btextfont="@string/RobotoCondensed" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_light">
+    </View>
+
+    <com.custom.BButton
+        android:id="@+id/av_bt_accept"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/yellow_color"
+        android:text="@string/bt_title_accept"
+        android:textSize="16sp"
+        android:textColor="@color/blue_color"
+        app:btextfont="@string/RobotoCondensed" />
+
+    <com.custom.BButton
+        android:id="@+id/av_bt_decline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/light_gray2"
+        android:text="@string/bt_title_decline"
+        android:textSize="16sp"
+        android:textColor="@color/blue_color"
+        app:btextfont="@string/RobotoCondensed" />
+</LinearLayout>
